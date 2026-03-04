@@ -22,7 +22,7 @@ jobs:
       - name: install kubectl
         uses: azure/setup-kubectl@v3
         with:
-          version: "v1.34.1"
+          version: "v1.34.1" 
 
       - name: aws configure
         uses: aws-actions/configure-aws-credentials@v1
@@ -51,3 +51,4 @@ jobs:
         run: |
           kubectl apply -f k8s/order_redis.yml
           kubectl apply -f k8s/order_deployment.yml
+          
