@@ -12,6 +12,13 @@ spec:
     apiVersion: apps/v1
     kind: Deployment
     name: order-deployment
+  
+  # pod version 
+  # minReplicas: 2
+  # maxReplicas: 4
+  # targetCPUUtilizationPercentage: 50
+  
+  # ec2 version
   minReplicas: 2
   maxReplicas: 10
   targetCPUUtilizationPercentage: 30
@@ -21,5 +28,10 @@ spec:
 
 # 부하 간단 테스트
 # 특정 pod에 접속
-# while true; do curl -s http://ordersystem-backend-service/product/list; done
+# kubectl get pods -n lgcns
+# kubectl exec -it ordersystem-backend-69dd989f9b-9d4ks -n lgcns -- sh
+
+# curl install 
+# apk add --no-cache curl
+# while true; do curl -s http://order-service/product/list; done
 
