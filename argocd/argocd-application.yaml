@@ -8,7 +8,7 @@ spec:
   source:
     repoURL: https://github.com/jslim9413/monolithic_k8s_aws.git
     targetRevision: main
-    path: ./k8s
+    path: k8s
   destination:
     # https://kubernetes.default.svc: 이는 Argo CD 자체가 설치된 클러스터의 내부 주소
     server: https://kubernetes.default.svc
