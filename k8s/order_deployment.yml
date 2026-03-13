@@ -39,7 +39,7 @@ spec:
             limits:
               cpu: "1"
               memory: "500Mi"
-            # 컨테이너가 시작될떄 보장받아야 하는 최소 자원
+            # 컨테이너가 시작될때 보장받아야 하는 최소 자원
             requests:
               cpu: "0.5"
               memory: "250Mi"
