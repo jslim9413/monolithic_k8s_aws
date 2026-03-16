@@ -8,11 +8,11 @@ spec:
   # 자원공간의 낭비를 방지하고 관리의 편의성을 제공해주는 옵션!!!
   revisionHistoryLimit: 2
 
-  replicas: 2
+  # replicas: 2
   
   # argocd test
   # 현재 깃에는 2개인데 3개로 변경했을 때 늘었다가 줄어드는 것 확인
-  # replicas: 3
+  replicas: 3
   selector:
     matchLabels:
       app: order-pod
